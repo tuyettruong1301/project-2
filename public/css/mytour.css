@@ -1,0 +1,64 @@
+.modal-dangky, .modal-dangnhap {
+	float: right; 
+	padding: 3px 20px; 
+	font-weight: bold;
+}
+
+.modal-header {
+	background-color: #66FFFF;
+}
+
+.modal-header div {
+	font-size: 32px; 
+	font-weight: bold; 
+	color: red;
+}
+
+.modal-content label {
+	color: blue;
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+.form-dangky fieldset {
+	color: blue; 
+}
+
+.form-dangky span {
+	color: red; 
+	margin-left: 20px;
+}
+
+.form-dangnhap span {
+	color: red; 
+	margin-left: 20px;
+}
+
+#btnKhach,#btnHDV {
+	width: 20%;
+}
+
+#ghinho {
+	font-weight: bold;
+}
+
+.btnDangNhap {
+	width: 20%; 
+	margin-top: 20px;
+}
+
+a {
+	cursor: pointer;
+}
+
+body {
+	font-size: 14px;
+}
+
+.modal-body {
+	padding-bottom: 0px;
+}
+
+#primary-menu .user{
+    padding: 20px 15px;
+}
