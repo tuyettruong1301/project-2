@@ -70,7 +70,7 @@
                             <td>{{$dt->tour->users->email}}</td>
                             <td>{{$dt->id}}</td>
                             <td>{{number_format($dt->tongtien)}}</td>
-                            <td>{{number_format($dt->tongtien * 9/10)}}</td>
+                            <td>{{number_format($dt->tongtien *3/ 10)}}</td>
                             <?php $sum += $dt->tongtien ?>                            
                         </tr>
                     @endforeach
