@@ -28,6 +28,8 @@
 	@include('client.layout_client.header_client')
     @include('client.layout_client.modal_client')
     @yield('content')   
+
+    <div id="gotoTop" class="icon-angle-up" style="background-color: red;"></div>
     
 </body>
 </html>

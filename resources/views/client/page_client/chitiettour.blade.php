@@ -66,6 +66,7 @@
 							</div>
 						</div>
 
+						@include('client.page_client.tabs_nhanxet')
 					</div>
 					@else
 					<h1 class="text-center title">Tour da bi xoa</h1><br><br>

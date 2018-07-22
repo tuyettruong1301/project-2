@@ -123,4 +123,9 @@ class PageController extends Controller
         return view('client.page_client.lichsudattour', compact('lichsu'));
     }
 
+    public function getTourCuaHdv($idhdv){
+        $tourhdv=Tour::where([['users_id',$idhdv],['trangthaitour',1]])->paginate(12);
+        return view('client.page_client.danhsachtour', compact('tourhdv'));
+    }
+
 }

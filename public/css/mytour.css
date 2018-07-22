@@ -234,3 +234,199 @@ body {
     margin-top: 0px;
 }
 
+.comment-content .comment-author span{
+    display:inline-block;
+}
+
+.comment-avatar {
+    top: 0px;
+}
+
+.comment-wrap{
+    padding: 8px 25px;
+}
+
+.commentlist li ul li {
+    margin: 5px 0 0;
+}
+
+.reply-comment{
+    margin: 10px 0 0 60px;
+    font-size: 1.6em;
+}
+
+.entry{
+    margin: 0 0 20px;
+}
+
+#comments {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.reply-comment i{
+    margin-left: 5px;
+}
+
+.commentlist ul .comment-wrap {
+    margin-left: 35px;
+    padding-left: 20px;
+}
+
+.boxRatingCmt{
+    margin-bottom:20px
+}
+
+.boxRatingCmt .toprt{
+    border:solid 1px #ddd;
+    border-radius:5px;
+    padding:5px 15px;
+    margin-bottom:20px
+}
+
+.boxRatingCmt .hrt{
+    overflow:hidden;
+    padding-bottom:5px;
+    margin-bottom:15px
+}
+
+.boxRatingCmt .crt{
+    height:120px;
+    box-sizing:border-box
+}
+
+.boxRatingCmt .crt .lcrt{
+    width:25%;
+    float:left;
+    border-right:solid 1px #eee;
+    padding-top:31px;
+    height:90%;
+    text-align:center;
+    box-sizing:border-box;
+    margin:5px 10px 5px 5px
+}
+
+.boxRatingCmt .crt .lcrt b{
+    font-size:40px;
+    color:#fd9727;
+    line-height:40px
+}
+
+.boxRatingCmt .crt .lcrt b i{
+    vertical-align:initial;
+    width:32px;
+    height:32px;
+    background-size:32px 32px
+}
+
+.boxRatingCmt .crt .rcrt .bgb .bgb-in{
+    background-color:#f25800;
+    background-image:linear-gradient(90deg,#ff7d26 0%,#f25800 97%);
+    height:5px;
+    border-radius:5px 0 0 5px
+}
+
+.boxRatingCmt .crt .lcrt span{
+    display:block;
+    color:#999;
+    font-size:13px;
+    margin-top:8px
+}
+
+.boxRatingCmt .crt .rcrt{
+    font-size:13px;
+    overflow:hidden;
+    box-sizing:border-box;
+    padding:10px 0;
+    width:70%;
+    float:left;
+}
+
+.boxRatingCmt .crt .rcrt span.t{
+    display:inline-block;
+    color:#333
+}
+
+.boxRatingCmt .crt .rcrt span.t i{
+    width:12px;
+    height:12px;
+    background-size:12px 12px;
+    display:inline-block
+}
+
+.boxRatingCmt .crt .rcrt span.c{
+    display:inline-block;
+    color:#288ad6;
+    cursor:pointer
+}
+
+.boxRatingCmt .crt .rcrt span.c:hover{
+    color:#0c72c1
+}
+
+.boxRatingCmt .crt .rcrt span.n{
+    color:#333;
+    text-decoration:unset !important;
+    cursor:unset !important
+}
+
+.boxRatingCmt .crt .bcrt a.close-btt{
+    background:#fff;
+    color:#288ad6;
+    border:1px solid #ddd
+}
+
+.boxRatingCmt .crt .rcrt .bgb{
+    width:60%;
+    background-color:#e9e9e9;
+    height:5px;
+    display:inline-block;
+    margin:0 10px;
+    border-radius:5px
+}
+
+.boxRatingCmt .crt .rcrt .bgb .bgb-in{
+    background-color:#f25800;
+    background-image:linear-gradient(90deg,#ff7d26 0%,#f25800 97%);
+    height:5px;
+    border-radius:5px 0 0 5px
+}
+
+.boxRatingCmt .crt .rcrt .r{
+    padding:1px 20px
+}
+
+.current a{
+    border-left: 1px solid #eee;
+}
+
+.commentlist li .comment-content p, .pingback p {
+    margin: 10px 0 0 10px;
+}
+
+.commentlist li {
+    margin: 10px 0 0 30px;
+}
+
+.comment .col_full{
+    margin-bottom: 0px;
+}
+
+.commentlist {
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+#respond h3{
+    margin-bottom: 10px;
+}
+
+.formReply {
+    margin-bottom: 0px;
+}
+
+#thongtinhdv span{
+    font-size: 2em;
+    display: block;
+    padding: 5px;
+}
+
