@@ -146,3 +146,72 @@ body {
 .rating .voted{
     color:#F90
 }
+
+.container .row .col-md-4, .container .row .col-sm-4{
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.icon-shopping-cart{
+    font-size: 100px; 
+    padding: 0 22px; 
+    color: orange
+}
+
+.post-navigation{
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+}
+
+.post-navigation em{
+    font-size: 35px; 
+    position: relative;
+    top: -22px;
+}
+
+.row .col-sm-12 {
+    font-size: 20px;
+}
+
+.single-post .entry-meta {
+    margin-bottom: 0px;
+}
+
+.title{
+    color: orange; 
+    margin: 20px;
+    color: #FE980F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.glyphicon-star{
+    font-size: 3em;
+}
+
+#primary-menu .user{
+    padding: 20px 15px;
+}
+
+#header.full-header #primary-menu>ul{
+    padding-right: 0px;
+}
+
+#header-wrap{
+    background: #FFFFCC;
+    position: fixed;
+    width: 100%;
+}
+
+.paginate{
+    font-size: 2em;
+}
+
+.single-post .entry-meta {
+    margin-bottom: 5px;
+}
+
+

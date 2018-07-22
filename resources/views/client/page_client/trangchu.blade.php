@@ -12,7 +12,7 @@
 						<div class="col-md-3 col-sm-4 wow zoomIn" data-wow-delay="<?php echo $j ?>s">
 							<div class="tour_container">
 								<div class="img_container">
-									<a href="">
+									<a href="{{route('chi-tiet',$tr->id)}}">
 										<img src="upload/{{$tr->hinhanh}}" width="360" height="250" class="img-responsive">
 										<span class="price">{{number_format($tr->giatour)}}<sup>VND</sup></span>
 									</a>
