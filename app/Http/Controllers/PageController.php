@@ -13,6 +13,7 @@ use Auth;
 use App\Tour;
 use App\DiaDiem;
 use App\DonHang;
+use App\DanhGia;
 
 class PageController extends Controller
 {
@@ -126,6 +127,17 @@ class PageController extends Controller
     public function getTourCuaHdv($idhdv){
         $tourhdv=Tour::where([['users_id',$idhdv],['trangthaitour',1]])->paginate(12);
         return view('client.page_client.danhsachtour', compact('tourhdv'));
+    }
+
+    public function DanhGia($idtour, Request $request){
+        if($request->sodiem == 0) return redirect()->back()->with('errorRate','Lỗi đánh giá!');
+
+        $rate = new DanhGia();
+        $rate->tour_id = $idtour;
+        $rate->users_id = Auth::user()->id;
+        $rate->sodiem = $request->sodiem;
+        $rate->save();
+        return redirect()->back()->with('successRate','Cảm ơn bạn đã đánh giá tour');
     }
 
 }

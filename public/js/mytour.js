@@ -185,6 +185,19 @@ $(document).ready(function() {
             $('#noidungComment').val('');
         }
     });
+
+    $('.glyphicon-star').click(function(){
+        danhgia = $(this).attr('id');
+        for(var i = 1; i <= 5; i++){
+            dg = '#dg' + i;
+            if(i <= danhgia[2]){        
+                $(dg).css('color','yellow');
+            }else{
+                $(dg).css('color','#DDDDDD');
+            }
+        }
+        $('#sodiemdanhgia').val(danhgia[2]);
+    });
 }); 
 
 function clickReply(id){
