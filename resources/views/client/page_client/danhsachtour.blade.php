@@ -12,7 +12,7 @@
 						<div class="col-md-3 col-sm-4 wow zoomIn" data-wow-delay="<?php echo $j ?>s">
 							<div class="tour_container">
 								<div class="img_container">
-									<a href="">
+									<a href="{{route('chi-tiet',$tdd->id)}}">
 										<img src="upload/{{$tdd->hinhanh}}" width="360" height="250" class="img-responsive">
 										<span class="price">{{number_format($tdd->giatour)}}<sup>VND</sup></span>
 									</a>
@@ -20,7 +20,14 @@
 								<div class="tour_title">
 									<h3>{{$tdd->tentour}}</h3>
 									<div class="rating">
-										
+										@for($k = 0; $k < 5; $k++)
+											@if($k < $tdd->danhgia->avg('sodiem'))
+												<i class="icon-smile voted"></i>
+											@else
+												<i class="icon-smile"></i>
+											@endif
+										@endfor
+										<span>({{$tdd->danhgia->count()}} luot danh gia)</span>		
 									</div>
 								</div>
 							</div>
@@ -44,7 +51,14 @@
 								<div class="tour_title">
 									<h3>{{$thdv->tentour}}</h3>
 									<div class="rating">
-										
+										@for($k = 0; $k < 5; $k++)
+											@if($k < $thdv->danhgia->avg('sodiem'))
+												<i class="icon-smile voted"></i>
+											@else
+												<i class="icon-smile"></i>
+											@endif
+										@endfor
+										<span>({{$thdv->danhgia->count()}} luot danh gia)</span>	
 									</div>
 								</div>
 							</div>

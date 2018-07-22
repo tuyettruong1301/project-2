@@ -20,7 +20,14 @@
 								<div class="tour_title">
 									<h3>{{$tr->tentour}}</h3>
 									<div class="rating">
-										
+										@for($k = 0; $k < 5; $k++)
+											@if($k < $tr->danhgia->avg('sodiem'))
+												<i class="icon-smile voted"></i>
+											@else
+												<i class="icon-smile"></i>
+											@endif
+										@endfor
+										<span>({{$tr->danhgia->count()}} luot danh gia)</span>	
 									</div>
 								</div>
 							</div>

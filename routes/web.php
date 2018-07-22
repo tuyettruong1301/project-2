@@ -26,5 +26,7 @@ Route::get('lich-su-dat-tour',['as'=>'lich-su','uses'=>'PageController@getLichSu
 
 Route::get('tour-cua-hdv-{idhdv}',['as' => 'tour_hdv', 'uses' => 'PageController@getTourCuaHdv']);
 
+Route::post('danh-gia-{idtour}',['as'=>'danh-gia','uses' => 'PageController@DanhGia']);
+
 //xu ly ajax
 Route::post('binhluan','AjaxController@postBinhLuan');
