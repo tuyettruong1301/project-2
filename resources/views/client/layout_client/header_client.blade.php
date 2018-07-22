@@ -26,6 +26,16 @@
                                 <img src="upload/{{Auth::user()->anhdaidien}}" height="60" width="60"> 
                                 {{Auth::user()->hoten}}
                             </a>
+                            <ul>
+                                
+                                @if(Auth::user()->quyen == 1)
+                                    <li><a href="{{route('lich-su')}}"><div>Lich su dat tour</div></a></li>
+                                @elseif(Auth::user()->quyen == 2)
+                                    <li><a href="{{route('trang-chu-hdv')}}"><div>Quan ly tour</div></a></li>
+                                @elseif(Auth::user()->quyen == 3)
+                                    <li><a href="{{route('trang-chu-admin')}}"><div>Trang quan ly</div></a></li>
+                                @endif
+                            </ul>
                         </li>  
                         <li class="current"><a href="{{route('dang-xuat')}}"><div>Đăng xuất</div></a></li>
                     @else

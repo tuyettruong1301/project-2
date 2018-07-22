@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 use App\Http\Requests\DangKyKhachRequest;
 use App\Http\Requests\DangKyHDVRequest;
 use App\Http\Requests\DangNhapRequest;
+use App\Http\Requests\DatTourRequest;
 use App\User;
 use Hash;
 use Auth;
 use App\Tour;
 use App\DiaDiem;
+use App\DonHang;
 
 class PageController extends Controller
 {
@@ -94,4 +96,31 @@ class PageController extends Controller
         $tourdiadiem= Tour::where([['diadiem_id',$iddd],['trangthaitour',1]])->paginate(12);
         return view('client.page_client.danhsachtour',compact('tourdiadiem'));
     }
+
+    public function postDatTour(DatTourRequest $request){
+        $tour = Tour::find($request->idtour);
+        if(!($request->sokhachdangky <= $tour->sokhachtoida && $request->sokhachdangky > 0)){
+            return redirect()->back()->with('loiKhachMax','Số khách đăng ký phải nhỏ hơn số khách tối đa');
+        }
+
+        if( strtotime($request->thoigianbatdau) < time()){
+            return redirect()->back()->with('loiThoiGian','Vui lòng kiểm tra lại thời gian vừa nhập');
+        }
+
+        $bill = new DonHang();
+        $bill->tour_id = $request->idtour;
+        $bill->users_id = Auth::user()->id;
+        $bill->tongtien = $request->giatour;
+        $bill->tinhtrangdon = 0;
+        $bill->thoigianbatdau = $request->thoigianbatdau;
+        $bill->sokhachdangky = $request->sokhachdangky;
+        $bill->save();
+        return redirect()->back()->with('successDatTour','Gửi đơn đặt tour thành công.');
+    }
+
+    public function getLichSu(){
+        $lichsu = DonHang::where('users_id',Auth::user()->id)->paginate(6);
+        return view('client.page_client.lichsudattour', compact('lichsu'));
+    }
+
 }
