@@ -19,3 +19,4 @@ Route::post('dang-nhap',['as'=>'dang-nhap', 'uses'=> 'PageController@postDangNha
 Route::get('dang-xuat',['as'=>'dang-xuat', 'uses'=> 'PageController@getDangXuat']);
 
 Route::get('tour-dia-diem/{iddd}',['as'=>'tour-dia-diem', 'uses'=>'PageController@getTourDiaDiem']);
+Route::get('chi-tiet/{id}', ['as' => 'chi-tiet', 'uses' => 'TourController@show']);
