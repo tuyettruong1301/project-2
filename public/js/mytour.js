@@ -8,4 +8,11 @@ $(document).ready(function() {
     if($('div').hasClass('loiLogin') || $('div').hasClass('loiDangNhap')){
         $('#DangNhap').modal();
     }
+    if($('div').hasClass('loiDatTour')){
+        $('#DatTour').modal();
+    }
+    if($('div').hasClass('successDatTour')){
+        $('#DatTour').modal();
+        $('#btnDatTour').attr('disabled','');
+    }
 }); 
